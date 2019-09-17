@@ -24,19 +24,73 @@
   function App(props) {
       console.log(props)
       return (
-        <header>
+        <div>
           {props.children}
-        </header>
+        </div>
       );
   }
   
   ReactDOM.render(
     <App className='my-class'>
+    <header>
       <h1>Sally Student</h1>
+    </header>
+    <section>
+      <address>
       <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" width="200"
         alt="A picture of me."/>
-      <a href="mailto:sallystudent1@gmail.com">Email me here</a>
-      phone number: 432-567-1234
+        <a href="mailto:sallystudent1@gmail.com">Email me here</a>
+        phone number: 432-567-1234
+      </address>
+    </section>
+    <main>
+       <section>
+        <header>
+          <h2>Summary</h2>
+        </header>
+         <p>
+         Knowledgeable HTML and CSS web developer skilled in creating websites from scratch. Works well in a team environment. 
+         </p>
+       </section>
+      <section>
+        <header>
+          <h2>Skills</h2>
+        </header>  
+        <ul>
+          <li>Strategic thinker</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Quick learner</li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Experience</h2>
+        </header>
+          <h4>Google, Web developer, 2017-2018</h4>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.</li>
+           </ul>
+          <h4>Revature, Junior software developer, 2018-2019</h4>
+           <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
+           </ul>
+      </section>
+    <section>
+      <header>
+        <h2>Education</h2>
+      </header>
+        <h4>Bachelor of Science, Computer Science, 2017</h4>
+          <p>
+            University of Tennessee - Memphis, TN
+          </p>
+    </section>
+    </main>
     </App>,
     document.querySelector('#application-root')
   );
