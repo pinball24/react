@@ -29,6 +29,14 @@
         </div>
       );
   }
+
+  function List(props) {
+    return (
+      <ul>
+        {(props.items.map(item => <li>{item}</li>))}
+      </ul>
+    );
+  }
   
   ReactDOM.render(
     <App className='my-class'>
@@ -39,7 +47,7 @@
       <address>
       <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" width="200"
         alt="A picture of me."/>
-        <a href="mailto:sallystudent1@gmail.com">Email me here</a>
+        <a href="mailto:sallystudent1@gmail.com">Email me here</a><br></br>
         phone number: 432-567-1234
       </address>
     </section>
@@ -55,31 +63,17 @@
       <section>
         <header>
           <h2>Skills</h2>
-        </header>  
-        <ul>
-          <li>Strategic thinker</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Quick learner</li>
-        </ul>
+        </header>
+        <List items= {['Strategic thinker', 'HTML', 'CSS', 'Javascript']} />
       </section>
       <section>
         <header>
           <h2>Experience</h2>
         </header>
           <h4>Google, Web developer, 2017-2018</h4>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.</li>
-           </ul>
+            <List items= {['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.']} />
           <h4>Revature, Junior software developer, 2018-2019</h4>
-           <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.</li>
-           </ul>
+            <List items= {['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, lobortis.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit, elit quis.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, turpis fringilla.']}/>
       </section>
     <section>
       <header>

@@ -2,3 +2,17 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+    text-align: center;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+address {
+    text-align: left;
+}
